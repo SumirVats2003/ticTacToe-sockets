@@ -1,3 +1,7 @@
+// Socket logic
+const socket = io();
+
+// Game Logic starts here
 let symbol = false;
 let gameOver = false;
 let started = false;
