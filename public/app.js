@@ -31,8 +31,8 @@ const cellIdToIndex = {
 
 Array.from(cells).forEach((element) => {
   element.addEventListener("click", (event) => {
-    started = true;
-    if (started) {
+    if (!started) {
+      started = true;
       result.innerText = "Match in Progress!!";
     }
     if (!gameOver) {
